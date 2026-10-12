@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+  >
+  <meta name="theme-color" content="#101820">
+  <title>City Drive 3D</title>
+</head>
+
+<body>
+  <div id="game">
+    <div id="hud">
+      <div class="brand">
+        <span class="brand-icon">🏎️</span>
+        <div>
+          <strong>CITY DRIVE</strong>
+          <small>FREE ROAM</small>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span>السرعة</span>
+          <strong><span id="speed">0</span><small> km/h</small></strong>
+        </div>
+
+        <div class="stat">
+          <span>المسافة</span>
+          <strong><span id="distance">0</span><small> m</small></strong>
+        </div>
+      </div>
+
+      <button id="cameraButton" class="top-button" type="button">
+        📷 الكاميرا
+      </button>
+    </div>
+
+    <div id="loading">
+      <div class="loader"></div>
+      <strong>جاري تجهيز المدينة...</strong>
+    </div>
+
+    <div id="message">
+      استخدم الأزرار لقيادة السيارة
+    </div>
+
+    <div id="controls">
+      <div class="steering">
+        <button class="control" data-control="left"
+          aria-label="يسار" type="button">◀</button>
+
+        <button class="control" data-control="right"
+          aria-label="يمين" type="button">▶</button>
+      </div>
+
+      <div class="pedals">
+        <button class="control brake" data-control="brake"
+          type="button">فرامل</button>
+
+        <button class="control gas" data-control="gas"
+          type="button">تسارع ▲</button>
+      </div>
+    </div>
+
+    <div id="hint">قد بحرية واستكشف المدينة</div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
